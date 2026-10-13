@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <span class="logo">Manager Library</span>
+                <span class="tagline">Library management system</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Manager Library</h1>
+                <p>A complete library management system: catalog, members, loans, and reports.</p>
+                <p class="stack">React + Laravel + PostgreSQL 16</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Book Catalog</h3>
+                        <p>Search, filter by category, manage covers. Logical delete preserves history.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Members</h3>
+                        <p>Register members with unique document numbers. No deletion — members are data.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Loans</h3>
+                        <p>1-3 books per loan, 14-day term, max 3 active per member. Return by line item.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Overdue Tracking</h3>
+                        <p>Automatic overdue detection. Members with overdue loans cannot borrow more.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Reports</h3>
+                        <p>Most borrowed books by date range. Frozen values preserve historical accuracy.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Roles</h3>
+                        <p>Admin manages everything. Librarian registers loans and returns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="roles">
+            <div class="container">
+                <h2>Roles</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Admin</h3>
+                        <ul>
+                            <li>Manage book catalog</li>
+                            <li>Create librarians</li>
+                            <li>View reports</li>
+                            <li>Manage members</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Librarian</h3>
+                        <ul>
+                            <li>Register loans</li>
+                            <li>Process returns</li>
+                            <li>View overdue loans</li>
+                            <li>Search catalog and members</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="repos">
+            <div class="container">
+                <h2>Repositories</h2>
+                <ul>
+                    <li><strong>docs</strong> — Specification and SDD translation</li>
+                    <li><strong>api</strong> — Laravel 11 backend with hexagonal architecture</li>
+                    <li><strong>app</strong> — React 18 frontend</li>
+                    <li><strong>infra</strong> — Docker Compose with PostgreSQL 16</li>
+                    <li><strong>tool</strong> — API demo data seeder</li>
+                    <li><strong>page</strong> — This static site</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Manager Library — Technical Challenge ADSO 3145556</p>
+        </div>
+    </footer>
+</body>
+</html>
